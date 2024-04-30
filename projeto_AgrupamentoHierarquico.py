@@ -339,7 +339,7 @@ def main():
     with st.echo():
             ""
             # Calcular a matriz de distância Gower
-            dist_gower = gower_matrix(df2, cat_features=vars_cat)
+            dist_gower = calcularGowerMatrix(data_x=df2, cat_features=vars_cat)
 
 
     st.success('Matriz de distância Gower calculada!')
